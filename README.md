@@ -10,9 +10,9 @@ Have a search tool of key words for people to search articles; Use unusual words
 
 Our stack consists of:
 
--an Express/NodeJS server
--Hosted and deployed on Heroku
--Using a MySQL (through JAWSDB) database to keep original and edited articles, and a Sequelize ORM to coordinate that
--We provide GET routes to serve the article data, and POST routes to save the edited articles
--Utilizes JS libraries to facilitate user editing of article data through the browser
--It's totally sick
+- an Express/NodeJS server
+- Hosted and deployed on Heroku
+- Using a MySQL (through JAWSDB) database to keep original and edited articles, and a Sequelize ORM to coordinate that
+- We provide GET routes to serve the article data, and POST routes to save the edited articles
+- Utilizes JS libraries to facilitate user editing of article data through the browser
+- It's totally sick
