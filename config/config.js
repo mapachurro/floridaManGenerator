@@ -1,7 +1,7 @@
-{
+module.exports = {
   "development": {
     "username": "root",
-    "password": "",
+    "password": process.env.MYSQL_PASSWORD,
     "database": "floridaManDB",
     "host": "localhost",
     "port": 3306,
