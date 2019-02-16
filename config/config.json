@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "root",
-    "password": "",
+    "password": "Man0Negra",
     "database": "floridaManDB",
     "host": "localhost",
     "dialect": "mysql"
