@@ -1,8 +1,8 @@
-{
+module.exports={
   "development": {
     "username": "root",
-    "password": null,
-    "database": "exampledb",
+    "password": "",
+    "database": "floridaManDB",
     "host": "localhost",
     "dialect": "mysql"
   },
@@ -18,4 +18,4 @@
     "use_env_variable": "JAWSDB_URL",
     "dialect": "mysql"
   }
-}
+};
