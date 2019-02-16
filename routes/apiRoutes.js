@@ -14,11 +14,4 @@ module.exports = function(app) {
       res.json(dbArticles);
     });
   });
-
-  // Delete an example by id
-  app.delete("/api/articles/:id", function(req, res) {
-    db.Articles.destroy({ where: { id: req.params.id } }).then(function(dbArticles){
-      res.json(dbArticles);
-    });
-  });
 };
