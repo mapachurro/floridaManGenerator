@@ -13,7 +13,9 @@ module.exports = function(app) {
 
   // Load example page and pass in an example by id
   app.get("/articles/:id", function(req, res) {
-    db.Articles.findOne({ where: { id: req.params.id } }).then(function(dbArticles) {
+    db.Articles.findOne({ where: { id: req.params.id } }).then(function(
+      dbArticles
+    ) {
       console.log(dbArticles);
       res.render("articles", { articles: dbArticles });
     });
