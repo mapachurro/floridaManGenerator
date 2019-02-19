@@ -1,13 +1,19 @@
 var db = require("../models");
 
 module.exports = function(app) {
-  // Get all examples
-  app.get("/api/examples", function(req, res) {
-    db.Example.findAll({}).then(function(dbExamples) {
-      res.json(dbExamples);
+  // This selects a single, random, entry to be loaded as an article to the page
+  app.get("/api/newPage", function(req, res) {
+    db.Articles.findOne({ order: "rand()" }).then(function(dbArticles) {
+      res.json(dbArticles);
     });
   });
 
+<<<<<<< HEAD
+  // This route allows a user to save their new article or version of an article to the database
+  app.post("/api/userSave", function(req, res) {
+    db.Example.create(req.body).then(function(dbArticles) {
+      res.json(dbArticles);
+=======
   // Create a new example
   app.post("/api/examples", function(req, res) {
     db.Example.create(req.body).then(function(dbExample) {
@@ -21,6 +27,7 @@ module.exports = function(app) {
       dbExample
     ) {
       res.json(dbExample);
+>>>>>>> master
     });
   });
 };

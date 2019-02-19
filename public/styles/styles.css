@@ -1,3 +1,7 @@
 .list-group-item {
   line-height: 2.5;
 }
+
+/* The Gothic Lettering for the page's landing message is from here: 
+/* https://www.cssfontstack.com/UnifrakturMaguntia */ 
+h1, h2 { font-family: UnifrakturMaguntia; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; } 
