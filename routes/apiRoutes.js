@@ -8,19 +8,23 @@ module.exports = function(app) {
     });
   });
 
-  // Create a new example
-  app.post("/api/examples", function(req, res) {
-    db.Example.create(req.body).then(function(dbExample) {
-      res.json(dbExample);
+  // This route allows a user to save their new article or version of an article to the database
+  app.post("/api/userSave", function(req, res) {
+    db.Example.create(req.body).then(function(dbArticles) {
+      res.json(dbArticles);
     });
   });
-
-  // Delete an example by id
-  app.delete("/api/examples/:id", function(req, res) {
-    db.Example.destroy({ where: { id: req.params.id } }).then(function(
-      dbExample
-    ) {
-      res.json(dbExample);
+  //route to search for term
+  app.get("/api/:query", function(req, res) {
+    db.Articles.findAll({
+      limit: 10,
+      where: {
+        articleText: {
+          $like: "%" + req.params.query + "%"
+        }
+      }
+    }).then(function(response) {
+      res.json(response);
     });
   });
 };
