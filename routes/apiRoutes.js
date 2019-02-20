@@ -14,4 +14,17 @@ module.exports = function(app) {
       res.json(dbArticles);
     });
   });
+  //route to search for term
+  app.get("/api/:query", function(req, res) {
+    db.Articles.findAll({
+      limit: 10,
+      where: {
+        articleText: {
+          $like: "%" + req.params.query + "%"
+        }
+      }
+    }).then(function(response) {
+      res.json(response);
+    });
+  });
 };
