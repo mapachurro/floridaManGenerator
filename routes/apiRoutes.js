@@ -8,12 +8,6 @@ module.exports = function(app) {
     });
   });
 
-<<<<<<< HEAD
-  // This route allows a user to save their new article or version of an article to the database
-  app.post("/api/userSave", function(req, res) {
-    db.Example.create(req.body).then(function(dbArticles) {
-      res.json(dbArticles);
-=======
   // Create a new example
   app.post("/api/examples", function(req, res) {
     db.Example.create(req.body).then(function(dbExample) {
@@ -27,7 +21,6 @@ module.exports = function(app) {
       dbExample
     ) {
       res.json(dbExample);
->>>>>>> master
     });
   });
 };
