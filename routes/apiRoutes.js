@@ -3,7 +3,8 @@ var db = require("../models");
 module.exports = function(app) {
   // This selects a single, random, entry to be loaded as an article to the page
   app.get("/api/newPage", function(req, res) {
-    db.Articles.findOne({ order: [Sequelize.literal("RAND()")] }).then(function(dbArticles) {
+    // eslint-disable-next-line prettier/prettier
+    db.Articles.findOne({ order: [Sequelize.literal("RAND()")] }).then(function(dbArticles){
       res.json(dbArticles);
     });
   });
