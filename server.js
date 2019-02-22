@@ -10,7 +10,7 @@ var PORT = process.env.PORT || 3000;
 // Middleware
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
-app.use(express.static("public"));
+app.use(express.static("public")); 
 
 // Handlebars
 app.engine(
@@ -44,4 +44,16 @@ db.sequelize.sync(syncOptions).then(function() {
   });
 });
 
+// app.get("/", function(req, res) {
+//   connection.query("SELECT * FROM floridaManDB;", function(err, data) {
+//     if (err) {
+//       return res.status(500).end();
+//     }
+
+  //   console.log(data);
+  //   res.render('random-article')
+  // });
+
+
+// show the user the individual story and the form to update the story
 module.exports = app;
