@@ -4,8 +4,10 @@ var Sequelize = require("sequelize");
 module.exports = function(app) {
   // This selects a single, random, entry to be loaded as an article to the page
   app.get("/api/newPage", function(req, res) {
-    db.Articles.findOne({ order: [Sequelize.literal("RAND()")] }).then(function(dbArticles) {
-      res.render("random-article", {articles: dbArticles});
+    db.Articles.findOne({ order: [Sequelize.literal("RAND()")] }).then(function(
+      dbArticles
+    ) {
+      res.render("random-article", { articles: dbArticles });
     });
   });
 
