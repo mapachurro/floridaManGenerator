@@ -1,4 +1,5 @@
 var db = require("../models");
+var Sequelize = require("sequelize");
 
 module.exports = function(app) {
   // This selects a single, random, entry to be loaded as an article to the page
