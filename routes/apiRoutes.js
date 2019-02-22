@@ -25,7 +25,7 @@ module.exports = function(app) {
         }
       }
     }).then(function(response) {
-      res.json(response);
+      res.render("search", { articles: response });
     });
   });
 };

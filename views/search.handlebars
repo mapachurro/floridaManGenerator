@@ -1,0 +1,14 @@
+<div id="header">All of stacy's cool header stuff will go here</div>
+<div id="body">
+    {{#each articles}}
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src= "../../public/assets/photos/FLORIDAMANcopy.png" alt="Card image cap">
+            <div class="card-body">
+                <h2 class="card-title" style="color:black">{{headline}}</h2>
+                <p class="card-text">{{articleText}}.</p>
+                <a href="#" class="btn btn-primary">Expand or Take to full page</a>
+            </div>
+        </div>
+    {{/each}}
+
+</div>
