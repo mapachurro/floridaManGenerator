@@ -1,0 +1,69 @@
+<header>
+        <div class="layer">
+            <div class="jumbotron jumbotron-fluid">
+                <div class="overlay"></div>
+                <div class="container1" style="height: -200px;">
+                    <h1 class=>Florida's Failed Superheros</h1>
+                    <h2 style=>Channel Your Own Inner Florida Man!</h2>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div>
+        <nav class="navbar navbar-expand-lg">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Find a Florida Man</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container2" ;>
+        <div style="background-image:url(assets/photos/maxresdefault.jpg);">
+            <div style="position: relative; left:0; top: 0;">
+                <img src="assets/photos/FLORIDA MAN copy.png" class="rounded mx-auto d-block" ; class="img-fluid" alt="Responsive image"
+                    max-width: 100%; height: auto; alt="FLorida Man" style="position: center; top: 0; left: 0; " />
+            </div>
+        </div>
+
+    </div>
+{{#each articles}}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h3 id="headline">Florida Man {{headline}}</h3>
+            </div>
+        </div>
+        <div class="row">
+
+            <div class="container">
+                <article class="row single-post mt-5 no-gutters">
+                    <div class="col-md-12">
+                        <div class="image-wrapper float-left pr-3">
+                            <img src="../public/assets/photos/"{{photoPath}} alt="">
+                        </div>
+                        <div class="single-post-content-wrapper p-3">
+                            {{articleText}}
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+    </div>
+    {{/each}}
+
+    <footer class="site-footer">
+        </div>
+        <p>Copyright &copy</p>;
+        </div>
+    </footer>
