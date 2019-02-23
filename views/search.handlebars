@@ -1,0 +1,21 @@
+<div id="header">All of stacy's cool header stuff will go here</div>
+<div id="body">
+
+    <div class="card-deck">
+    {{#each articles}}
+    <div class="card col-3">
+    <img class="card-img-top" src="/assets/photos/{{photoPath}}" alt="Card image cap" style="width: 50; height: 50;">
+    <div class="card-body">
+        <h5 class="card-title" style="color:black">{{headline}}</h5>
+        <p class="card-text">{{articleText}}</p>
+        <a href="#" class="btn btn-danger">Go somewhere</a>
+    </div>
+    </div>
+    {{/each}}
+    </div>
+
+
+
+    
+
+</div>
