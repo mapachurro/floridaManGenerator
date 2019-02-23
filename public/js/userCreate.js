@@ -1,10 +1,11 @@
-// Get references to page elements
-var userHeadline = $("#userHeadline");
-var userArticle = $("#userArticle");
-var submitBtn = $("#submitBtn");
-
 window.onload = function() {
-  $(submitBtn).on("click", function() {
+  // Get references to page elements
+  var userHeadline = $("#userHeadline");
+  var userArticle = $("#userArticle");
+  var submitBtn = $("#submitBtn");
+
+  $(submitBtn).on("click", function(event) {
+    event.preventDefault();
     console.log("Submit button clicked!");
     handleFormSubmit(event);
   });
@@ -45,9 +46,9 @@ window.onload = function() {
       headline: userHeadline.val().trim(),
       articleText: userArticle.val().trim()
     };
-    console.log(userCreated);
+    console.log(Article);
 
-    if (!(Article.userHeadline && Article.userArticle)) {
+    if (!(Article.headline && Article.articleText)) {
       alert("You must enter text for the headline and the article!");
       return;
     }
