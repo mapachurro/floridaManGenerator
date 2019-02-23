@@ -18,17 +18,36 @@ module.exports = function(app) {
       res.json(dbArticles);
     });
   });
+
   //route to search for term
   app.get("/api/search/:query", function(req, res) {
     db.Articles.findAll({
       limit: 10,
       where: {
-        articleText: {
-          $like: "%" + req.params.query + "%"
-        }
+        $or: [
+          {
+            articleText: {
+              $like: "%" + req.params.query + "%"
+            }
+          },
+          {
+            headline: {
+              $like: "%" + req.params.query + "%"
+            }
+          }
+        ]
       }
     }).then(function(response) {
       res.render("search", { articles: response });
+    });
+  });
+
+  //route to view specific article
+  app.get("/api/article/:id", function(req, res) {
+    db.Articles.findOne({ where: { id: req.params.id } }).then(function(
+      response
+    ) {
+      res.render("random-article", { articles: response });
     });
   });
 };

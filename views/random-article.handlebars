@@ -1,25 +1,25 @@
-
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8">
-                <h3 id="headline">Florida Man {{articles.headline}}</h3>
-            </div>
-        </div>
-        <div class="row">
-
-            <div class="container">
-                <article class="row single-post mt-5 no-gutters">
-                    <div class="col-md-12">
-                        <div class="image-wrapper float-left pr-3">
-                            <img src="/assets/photos/{{articles.photoPath}}" alt="">
-                        </div>
-
-                    </div>
-                    <div id="articleText"></div>
-                </div>
-            </article>
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <h3 id="headline">Florida Man {{articles.headline}}</h3>
         </div>
     </div>
+    <div class="row">
+
+        <div class="container">
+            <article class="row single-post mt-5 no-gutters">
+                <div class="col-md-12">
+                    <div class="image-wrapper float-left pr-3">
+                        <img src="/assets/photos/{{articles.photoPath}}" alt="">
+                    </div>
+                </div>
+        </div>
+        </article>
+        <div id="articleText">
+            {{articles.articleText}}
+        </div>
+    </div>
+</div>
 
 
 <footer class="site-footer">
