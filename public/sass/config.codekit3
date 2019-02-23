@@ -9,6 +9,13 @@
 	],
 "creatorBuild": "28905",
 "files": {
+	"/.sass-cache/59f5a8611da4f5d478401cca22683b348a05499e/app.sassc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/.sass-cache/59f5a8611da4f5d478401cca22683b348a05499e/app.sassc",
+		"oF": 0
+		},
 	"/app.css": {
 		"aP": 1,
 		"bl": 0,
@@ -67,7 +74,7 @@
 "projectAttributes": {
 	"creationDate": 572485760.85627198,
 	"displayValue": "sass",
-	"displayValueWasSetByUser": 0,
+	"displayValueWasSetByUser": 1,
 	"iconImageName": "meme-grumpy",
 	"iconImageWasSetByUser": 0
 	},

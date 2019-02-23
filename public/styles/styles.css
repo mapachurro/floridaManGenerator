@@ -30,6 +30,16 @@
     border-bottom: 2pt solid red;
   } 
 
+  .navbar-nav > li{
+    padding-left:30px;
+    padding-right:30px;
+  }
+
+  .container5 {
+    /* border-top: 2pt solid red; */
+    border-bottom: 2pt solid red;
+  }
+
   .container{
       margin-top: 50px;
       padding-top: 20px;
@@ -52,10 +62,10 @@ body {
 }
 
   
-    h1 { font-family: UnifrakturMaguntia; font-size: 36px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; color: white;}
+    h1 { font-family: UnifrakturMaguntia; font-size: 40px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; color: white;}
   
     
-    h2 { font-family: UnifrakturMaguntia; font-size: 16px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; color: white;
+    h2 { font-family: UnifrakturMaguntia; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; color: white;
       /* font-weight: 100;
       color: rgb(255, 255, 255);
       padding-bottom: 0px;
