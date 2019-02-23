@@ -39,6 +39,16 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/styles-min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/styles-min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"/styles.css": {
 		"aP": 1,
 		"bl": 0,
@@ -46,7 +56,7 @@
 		"ma": 0,
 		"oA": 0,
 		"oAP": "/styles-min.css",
-		"oF": 0,
+		"oF": 3,
 		"oS": 3
 		}
 	},
