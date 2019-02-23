@@ -11,6 +11,10 @@ module.exports = function(app) {
     });
   });
 
+  app.get("/create", function(req, res) {
+    res.render("userCreate");
+  });
+
   // Load example page and pass in an example by id
   app.get("/articles/:id", function(req, res) {
     db.Articles.findOne({ where: { id: req.params.id } }).then(function(
