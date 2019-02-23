@@ -4,7 +4,7 @@ var userArticle = $("#userArticle");
 var submitBtn = $("#submitBtn");
 
 window.onload = function() {
-  $("#submitBtn").on("click", function() {
+  $(submitBtn).on("click", function() {
     console.log("Submit button clicked!");
     handleFormSubmit(event);
   });

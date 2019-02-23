@@ -5,21 +5,29 @@
             <h3 id="headline">Florida Man {{articles.headline}}</h3>
         </div>
     </div>
-    <div class="row">
-        <div class="container">
-            <article class="row single-post mt-5 no-gutters">
-                <div class="col-md-12">
-                    <div class="image-wrapper float-left pr-3">
-                        <img src="/assets/photos/{{articles.photoPath}}" alt=""></img>
-                    </div>
-                    <div class="single-post-content-wrapper p-3">
-                        {{articles.articleText}}
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h3 id="headline">Florida Man {{articles.headline}}</h3>
+            </div>
+        </div>
+        <div class="row">
+
+            <div class="container">
+                <article class="row single-post mt-5 no-gutters">
+                    <div class="col-md-12">
+                        <div class="image-wrapper float-left pr-3">
+                            <img src="/assets/photos/{{articles.photoPath}}" alt="">
+                        </div>
+                        {{!-- <div class="single-post-content-wrapper p-3">
+                            {{articles.articleText}}
+                        </div> --}}
                     </div>
                 </div>
             </article>
         </div>
     </div>
-</div>
 
 
 <footer class="site-footer">
