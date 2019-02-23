@@ -1,4 +1,5 @@
 models/index.js
+/models/userCreate.js
 node_modules
 models/seeds.sql
 models/schema.sql
