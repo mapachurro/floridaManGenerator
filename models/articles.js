@@ -12,7 +12,9 @@ module.exports = function(sequelize, DataTypes) {
         len: [1, 5000]
       }
     },
-    originalURL: DataTypes.STRING
+    originalURL: DataTypes.STRING,
+    createdAt: DataTypes.DATE,
+    updatedAt: DataTypes.DATE
   });
   return Articles;
 };

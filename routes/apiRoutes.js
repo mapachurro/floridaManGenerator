@@ -4,24 +4,30 @@ var Sequelize = require("sequelize");
 module.exports = function(app) {
   // This selects a single, random, entry to be loaded as an article to the page
   app.get("/api/newPage", function(req, res) {
-    db.Articles.findOne({ order: [Sequelize.literal("RAND()")] }).then(function(dbArticles) {
-      res.render("random-article", {articles: dbArticles});
-    });
-  });
-
-  // Create a new example
-  app.post("/api/examples", function(req, res) {
-    db.Example.create(req.body).then(function(dbExample) {
-      res.json(dbExample);
-    });
-  });
-
-  // Delete an example by id
-  app.delete("/api/examples/:id", function(req, res) {
-    db.Example.destroy({ where: { id: req.params.id } }).then(function(
-      dbExample
+    db.Articles.findOne({ order: [Sequelize.literal("RAND()")] }).then(function(
+      dbArticles
     ) {
-      res.json(dbExample);
+      res.render("random-article", { articles: dbArticles });
+    });
+  });
+
+  // This route allows a user to save their new article or version of an article to the database
+  app.post("/api/userSave", function(req, res) {
+    db.Articles.create(req.body).then(function(dbArticles) {
+      res.json(dbArticles);
+    });
+  });
+  //route to search for term
+  app.get("/api/search/:query", function(req, res) {
+    db.Articles.findAll({
+      limit: 10,
+      where: {
+        articleText: {
+          $like: "%" + req.params.query + "%"
+        }
+      }
+    }).then(function(response) {
+      res.json(response);
     });
   });
 };
