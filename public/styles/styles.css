@@ -15,6 +15,7 @@
 .container1 {
     margin: 0px;
     padding: 0px;
+    background-color: black
     /* margin-left: 600px;
     padding-bottom: -60; */
   }
@@ -110,8 +111,35 @@ body {
     margin-right: 0px;
     
   }
+
+  *,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body2{
+    background-color: #141414;
+  }
     
+  .wrapper2{
+    display: grid;
+    width: 200px;
+    max-width:100%;
+    height:80vh;
+    margin: 30px auto;
+    grid-gap: 5px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+  }
+
+  .row{
+    margin-top: 30px;
+    margin-bottom: 30px
+  }
+
   
+
     footer {
       padding: 30px 0;
       clear: both;
@@ -119,10 +147,12 @@ body {
       color: #ffffff;
       color: #faf8f8;
       text-align: center;
-      background: #4c5985;
-      border-top: 6px solid rgb(41, 44, 53);
+      background: #747475;
+      border-top: 6px solid rgb(13, 13, 14);
       /* height: 50px; */
     }
+
+    
   
     
 
