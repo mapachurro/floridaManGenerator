@@ -1,0 +1,29 @@
+
+#share{
+    position: relative;
+    top: -550px;
+    left: 20px;
+    border: 2px dashed black;
+    width: 60px;
+    height: 285px;
+}
+.resp-sharing-button--facebook{
+    position: relative;
+    top: -100px;
+}
+.resp-sharing-button--twitter{
+    position: relative;
+    top: -200px;
+}
+.resp-sharing-button--google{
+    position: relative;
+    top: -300px;
+}
+.resp-sharing-button--email{
+    position: relative;
+    top: -400px;
+}
+.resp-sharing-button--whatsapp{
+    position: relative;
+    top: -500px;
+}
