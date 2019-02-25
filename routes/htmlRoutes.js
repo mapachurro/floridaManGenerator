@@ -7,6 +7,11 @@ module.exports = function(app) {
     res.render("userCreate");
   });
 
+  app.get("/find", function(req, res) {
+    res.render("search");
+  });
+
+
   // Render 404 page for any unmatched routes
   app.get("*", function(req, res) {
     res.render("404");
