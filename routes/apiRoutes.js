@@ -50,4 +50,11 @@ module.exports = function(app) {
       res.render("random-article", { articles: response });
     });
   });
+
+  //route to view all
+  app.get("/articles/all", function(req, res) {
+    db.Articles.findAll().then(function(response) {
+      res.render("search", { articles: response });
+    });
+  });
 };

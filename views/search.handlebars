@@ -1,11 +1,12 @@
 
+
 <div id="body">
  <div class= "container">
      <div class="col-md-12"></div>
     <div class="card-deck">
     {{#each articles}}
     <div class="card col-3">
-    <img class="card-img-top" src="/assets/photos/{{photoPath}}" alt="Card image cap" style="width: 50; height: 50;">
+    {{#if photoPath}}<img class="card-img-top" src="/assets/photos/{{photoPath}}" alt="Card image cap" style="width: 50; height: 50;">{{/if}}
     <div class="card-body">
         <h5 class="card-title" style="color:black">{{headline}}</h5>
         {{!-- <p class="card-text">{{articleText}}</p> --}}
@@ -20,3 +21,8 @@
     </div>
 
 </div>
+<footer class="site-footer">
+    </div>
+    <p>Copyright &copy</p>
+    </div>
+</footer>
