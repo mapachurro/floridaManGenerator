@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="/styles/styles2.css" media="screen" title="no title" charset="utf-8">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="/js/userCreate.js"></script>
+  <script src="/js/search.js"></script>
 
   <title>Florida Man Page Generator</title>
 </head>
@@ -34,14 +35,18 @@
                         <a class="nav-link" href="/">Home<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/find">Find a Florida Man</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="/create">Create Your Own FM</a>
                     </li>
-                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/stupidity">Sort by Stupidity</a>
+                        </li>
+                    <li class="nav-item">
+
+                        <form class="form-inline active-cyan-4">
+                            <input id="search-term" class="form-control form-control-sm mr-1 w-75" type="text" placeholder="Search" aria-label="Search">
+                            <button id="srch-btn" class="btn btn-rounded btn-sm" type="submit">go</button>
+                        </form>
+
                     </li>
                 </ul>
             </div>
