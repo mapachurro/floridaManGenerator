@@ -9,6 +9,13 @@
 	],
 "creatorBuild": "28905",
 "files": {
+	"/.sass-cache/59f5a8611da4f5d478401cca22683b348a05499e/app.sassc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/.sass-cache/59f5a8611da4f5d478401cca22683b348a05499e/app.sassc",
+		"oF": 0
+		},
 	"/app.css": {
 		"aP": 1,
 		"bl": 0,
@@ -39,6 +46,23 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/stupid.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/stupid.html",
+		"oF": 0
+		},
+	"/styles-min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/styles-min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"/styles.css": {
 		"aP": 1,
 		"bl": 0,
@@ -46,7 +70,7 @@
 		"ma": 0,
 		"oA": 0,
 		"oAP": "/styles-min.css",
-		"oF": 0,
+		"oF": 3,
 		"oS": 3
 		}
 	},
@@ -57,7 +81,7 @@
 "projectAttributes": {
 	"creationDate": 572485760.85627198,
 	"displayValue": "sass",
-	"displayValueWasSetByUser": 0,
+	"displayValueWasSetByUser": 1,
 	"iconImageName": "meme-grumpy",
 	"iconImageWasSetByUser": 0
 	},
