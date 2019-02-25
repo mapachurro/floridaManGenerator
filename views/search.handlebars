@@ -2,10 +2,12 @@
 
 <div id="body">
  <div class= "container">
-     <div class="col-md-12"></div>
+     <div class="col-md-12">
     <div class="card-deck">
     {{#each articles}}
-    <div class="card col-3">
+    <div class="col-md-12">
+    <div class="row">
+    <div class="card col-6">
     {{#if photoPath}}<img class="card-img-top" src="/assets/photos/{{photoPath}}" alt="Card image cap" style="width: 50; height: 50;">{{/if}}
     <div class="card-body">
         <h5 class="card-title" style="color:black">{{headline}}</h5>
@@ -13,7 +15,12 @@
         <a href="/api/article/{{id}}" class="btn btn-danger">View Article</a>
     </div>
     </div>
+    </div>
     {{/each}}
+    <br>
+    </div>
+
+    </div>
     </div>
 
 
