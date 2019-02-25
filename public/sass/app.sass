@@ -5,7 +5,7 @@ $red:  #FF0000
 
 //MIXINS
 
-=circleThing($rad, $height, $width, $bg, $color)
+=circleThing($rad, $height, $width, $bg, $color,)
     -webkit-border-radius:  $rad
     -moz-border-radius:     $rad
     -ms-border-radius:      $rad
@@ -20,13 +20,11 @@ $red:  #FF0000
     background: $bg
     color:  $color
 
-    margin: 150 auto
+    margin: 0 auto
+
+    
 
 //STYLES
-
-header
-    +circleThing(250%, 250px, 250px, $red, white)
-    margin: 50pt
 
 
 
@@ -34,27 +32,28 @@ header
     background: black
     color: $white
 
-.container5
-    background: white
 
 .container11
-    margin: -385px auto 0
+    +circleThing(155%, 155px, 155px, $red, white,)
+    position: relative
+    z-index: -2
+    Margin-top: 16px
+    margin-left: 170pt
+    
+
+.container12
     padding: 40px
     background: black
     color: white
     position: relative
     z-index: -2
     text-align: center
-    text-margin: 20px
-
-.container13
-    padding-left: 60px
-    position: relative
-    margin-left: 300px
 
 .container14
-    padding: 60px
-    position: relative
+ padding: 80px  
+ margin-top: 40px 
+   
+
 
 
 
