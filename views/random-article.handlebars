@@ -1,26 +1,28 @@
 
-<div class="container">
+<div id="all-content"class="container">
     <div class="row">
         <div class="col-md-8">
             <h3 id="headline">Florida Man {{articles.headline}}</h3>
         </div>
     </div>
-    <div class="row">
+    <div id="article-content" class="container">
+      <article class="row single-post mt-5 no-gutters">
+        
+          
+        {{#if articles.photoPath}}<img id="article-image" src="/assets/photos/{{articles.photoPath}}" alt="">{{/if}}
+          
+        
 
-        <div class="container">
-            <article class="row single-post mt-5 no-gutters">
-                <div class="col-md-12">
-                    <div class="image-wrapper float-left pr-3">
-                        {{#if articles.photoPath}}<img id="article-image" src="/assets/photos/{{articles.photoPath}}" alt="">{{/if}}
-                    </div>
-                </div>
-        </div>
-        </article>
         <div id="articleText">
-            {{articles.articleText}}
+            <p id="text">{{articles.articleText}}
+      
+            </p>
         </div>
+      </article>
     </div>
 </div>
+
+{{!-- Social media sharing button group --}}
 <div id="share">
     <!-- Sharingbutton Facebook -->
 <a class="resp-sharing-button__link" href="https://facebook.com/sharer/sharer.php?u=http%3A%2F%2Ffloridamangenerator.com/api/article/{{articles.id}}" target="_blank" rel="noopener" aria-label="">

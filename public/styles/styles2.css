@@ -1,7 +1,47 @@
+#all-content{
+    border:2px solid black;
+    margin-bottom: 30px;
+}
 
-#share{
+#headline{
+    font-family: "IM Fell English", serif;
+    font-size: 50px;
+    text-align: center;
+    width: 100%;
+    margin-left: 20%;
+    margin-right:20%;
+    line-height: 50px;
+    margin-bottom: 0px;
+    border-bottom:2px solid black;
+}
+#article-content{
+    margin-top: 0px;
     position: relative;
-    top: -550px;
+    top:-40px;
+    left:-40px;
+}
+#text{
+    text-indent: 25px;
+}
+#article-image{
+    float: left;
+    border:2px solid black;
+}
+#articleText{
+    float: left;
+    max-width: 65%;
+    position: relative;
+    left: 65px;
+}
+
+
+
+
+
+/* Media share buttons */
+#share{
+    position: absolute;
+    top: 550px;
     left: 20px;
     border: 2px dashed black;
     width: 60px;
