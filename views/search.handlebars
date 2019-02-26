@@ -1,29 +1,21 @@
-
-
 <div id="body">
- <div class= "container">
-     <div class="col-md-12">
-    <div class="card-deck">
-    {{#each articles}}
-    <div class="card col-6">
-    {{#if photoPath}}<img class="card-img-top" src="/assets/photos/{{photoPath}}" alt="Card image cap" style="width: 50; height: 50;">{{/if}}
-    <div class="card-body">
-        <h5 class="card-title" style="color:black">Florida Man {{headline}}</h5>
-        {{!-- <p class="card-text">{{articleText}}</p> --}}
-        <a href="/api/article/{{id}}" class="btn btn-danger">View Article</a>
+    <div class= "container">
+        
+        <div class="card-deck">
+            {{#each articles}}
+                <div class="card col-6">
+                    {{#if photoPath}}<img class="card-img-top" src="/assets/photos/{{photoPath}}" alt="Card image cap" style="width: 50; height: 50;">{{/if}}
+                    <div class="card-body">
+                        <h5 class="card-title" style="color:black">Florida Man {{headline}}</h5>
+                        <a href="/api/article/{{id}}" class="btn btn-danger">View Article</a>
+                    </div>
+                </div>
+            {{/each}}
+        </div> 
     </div>
-    </div>
-    {{/each}}
-    
-
-    </div>
-    </div>
-
-
-
-    </div>
-
 </div>
+
+
 <footer class="site-footer">
     </div>
     <p>Copyright &copy</p>
