@@ -2,9 +2,8 @@ window.onload = function() {
   // Get references to page elements
   var userHeadline = $("#userHeadline");
   var userArticle = $("#userArticle");
-  var submitBtn = $("#submitBtn");
 
-  $(submitBtn).on("click", function(event) {
+  $("#submitBtn").on("click", function(event) {
     event.preventDefault();
     console.log("Submit button clicked!");
     handleFormSubmit(event);
